@@ -67,4 +67,19 @@ class ArrayUtility
 
         return $ret;
     }
+
+    public static function groupByArray($arr, $key_field_arr)
+    {
+        $ret = array();
+        foreach ($arr as $row) {
+            $key_arr = [];
+            foreach ($key_field_arr as $v) {
+                $key_arr[] = $row[$v];
+            }
+            $key = implode('_', $key_arr);
+            $ret[$key][] = $row;
+        }
+
+        return $ret;
+    }
 }
