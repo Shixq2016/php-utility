@@ -1,0 +1,17 @@
+{
+  "name": "shixq2010/php-utility",
+  "description": "php tools",
+  "keywords": [],
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "easyswoole/easyswoole" : "3.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Es3\\Utility\\": "src/"
+    }
+  }
+}
